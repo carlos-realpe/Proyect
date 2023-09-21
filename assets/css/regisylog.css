@@ -1,0 +1,68 @@
+
+
+
+.formularios{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background: whitesmoke;
+   /* width: 80%;*/
+    margin: 0 auto; 
+    margin-top: 5%;
+     
+}
+.container_pgnfound{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10%;
+    background: whitesmoke;
+    margin: 0 10%;
+    
+   
+align-items: center;
+     
+}
+       
+
+#contenedor{
+    width: 80%;
+     margin: 0 auto; /*para centrar un contenedor*/
+     margin-top: 40px;
+     margin-bottom: 35px;
+     
+    
+ }
+
+ 
+.expansion{
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .container_pgnfound{
+    margin: 50% 0;
+
+        }
+  }
+
+
+
+@media(max-width:990px){
+  #contenedor {
+     width: 100%; 
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: row;
+}
+
+
+}

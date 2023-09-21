@@ -1,0 +1,453 @@
+
+
+
+
+body {
+   
+    font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+}
+
+/*=====================================
+estilos de la utilidad
+Copiar esto
+=====================================*/
+.seccion-perfil-usuario .perfil-usuario-body,
+.seccion-perfil-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+
+.seccion-perfil-usuario .perfil-usuario-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(24,19,20,1) , transparent);
+    margin-bottom: 3.25rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-portada {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 17rem;
+    /*background-image: linear-gradient(45deg, rgba(9,9,121,1), rgba(0,212,255,1));*/
+    background-image: linear-gradient(45deg, var(--colorAzul1), var(--colorTurquesa));
+    border-radius: 0 0 20px 20px;
+    /*
+    background-image: url('http://localhost/multimedia/png/user-portada-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    */
+}
+
+
+
+.seccion-perfil-usuario .perfil-usuario-avatar {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid var(--colorAzul1);
+    background-color: var(--colorTurquesa);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 90px);
+    z-index: 0;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar img {
+    width: 90%;
+    height: 90%;
+    /* position: relative; */
+    border-radius: 50%;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar  {
+    position: absolute;
+    left: -10px;
+    top: 115px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.boton-avatar .icon-subida-perfil{
+    position: relative;
+    top: 10px;
+    
+
+}
+
+.seccion-perfil-usuario .perfil-usuario-body {
+    width: 800px;
+    position: relative;
+    background: #f2f2f2;
+    border: 1px solid var(--colorAzul1);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 18px 20px 11px 0px rgb(0 0 0);
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .titulo {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .texto {
+    color: #848484;
+    font-size: 0.95em;
+}
+
+/* **********PARTE DEL BODY********** */
+.perfil-usuario-detalleg{
+    display: flex;
+    margin: 50px auto;
+   
+    /* margin: 50px; */
+ 
+}
+
+.caja-detalleg , .caja-pw-maps{
+    margin: 15px;
+    height: 800px;
+    width: 500px;
+    background: #f2f2f2;
+    border: 1px solid black;
+    box-shadow: 8px -8px 11px 0px rgb(0 0 0);
+    border-radius: 10px;
+
+
+    padding: 90px;
+}
+.inputtext-cambiar-pw ,.labeltext-cambiar-pw{
+    margin-bottom: 10px;
+    text-align: left;
+  
+}
+
+.caja-imgmaps{
+    width:350px;
+ 
+    display: flex;
+    border: 1px solid black;
+    box-shadow: 0 0 12px rgba(26, 24, 165, 0.274);
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caja-detalleg .labelde {
+    width: auto;
+    margin: 20px 0;
+}
+.caja-detalleg .caja-detalle-principal, .caja-detalle-secundario{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+}
+.titulo-datos-generales{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family:monospace;
+    font-size: 30px;
+}
+
+.caja-labor, .caja-cv{
+margin: 10px auto;
+}   
+
+.caja-imgmaps .label-ciudad{
+    margin-top: 10px;
+
+}
+.etiqueta-edit-derecho{
+    margin-right:235px; 
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* *********PAGINA 3 REGISTRO DE TRABAJO****** */
+.titulo-registroempleo{
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border:1px solid black;
+    color: wheat;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background:var(--colorAzul);
+}
+.perfil-usuario-body-genelab{
+    width: 400px;
+    /* width: auto;*/
+    border: 1px solid rgba(3, 2, 29, 0.822);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px var(--colorAzul1);
+    background:var(--colorTurquesa);
+    color: #fcfcfc;
+text-shadow: 3px 1px 2px black;
+    font-weight: bold;
+}
+.perfil-usuario-header-genelab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(24,19,20,1) , transparent);
+    
+    margin-bottom: 2.25rem;
+}
+
+.contenedor-registroempleo{
+        width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px auto;
+    background-image: linear-gradient(45deg, var(--colorAzul1), var(--colorTurquesa));
+    border-radius: 5px;
+    padding: 10px;
+
+    }
+   
+    .contenedor-registroempleo form{
+  width: 90%;   
+    }
+    
+    .detalle-usuario{
+    
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    }
+    .detalle-usuario .teximagen{
+        border: 1px solid black;
+        background:whitesmoke;
+        padding:50px;
+      display:flex;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom : 50px ;
+      
+      
+      }
+    .detalle-usuario .imagen{
+    margin: 10px auto;
+    
+    }
+    .prec-ocu{
+      display: flex;
+      gap: 10px;
+    }
+    
+    .detalle-usuario2{
+    border: 1px solid black;
+    background: white;
+    padding: 20px;
+ 
+    margin-bottom: 2.35rem;
+      display: flex;
+    justify-content: space-between;
+    gap:20px;
+    
+    }
+    .detalle-usuario2 .detalle-campos .input-box{
+      margin: 10px auto;
+    
+    }
+    .dcderecha , .dcizquierda{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+     
+    }
+    .dcderecha .input-box img{
+      margin: 10px;
+      text-align: center;
+    
+    }
+    .button-guardado{
+        display:flex;
+        justify-content: center;
+        gap: 10%;
+        margin-bottom: 25px ;
+    }
+    .button-gc-form input{
+        width: 150px;
+        height: 50px;
+
+    }
+    
+    .seccion-perfil-usuario .perfil-usuario-avatar-generarem {
+        display: flex;
+        width: 180px;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+        border: 7px solid rgba(5, 3, 82, 0.74);
+        background-color: aqua;
+        border-radius: 5%;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+        position: relative;
+        bottom: 10px;
+        left: calc(50% - 90px);
+        z-index: 1;
+    }
+    
+    .seccion-perfil-usuario .perfil-usuario-avatar-generarem img {
+        width: 80%;
+        /* position: relative; */
+        border-radius: 5%;
+    }
+    .seccion-perfil-usuario .perfil-usuario-avatar-generarem .boton-avatar  {
+        position: absolute;
+        left: -10px;
+        top: 115px;
+        border: 0;
+        background-color: #fff;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .lbl-titulo-of{
+	display: none;
+    }
+    
+   
+
+.lbl{
+    display: block;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+
+}
+.input-box .lbl-opcional{
+    font-size: 12px;
+    margin: 10px;
+    font-style: italic;
+    color: green;
+}
+
+.formulario__mensaje-off{
+	
+	display: none;
+}
+.formulario__mensaje-on{
+    height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+}
+
+.formulario__mensaje-exito{
+
+	display: none;
+}
+.formulario__mensaje-exito-on {
+    font-size: 14px;
+	color: black;
+	display: block;
+    text-align: center;
+    border:1px solid black;
+    background:#119200;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    align-items: center;
+}
+
+#cancelar_cambiarpw{
+    padding: 0px 10px; 
+    font-weight:bold;
+}
+
+
+
+
+
+@media(max-width:990px){
+.perfil-usuario-body-genelab{
+width: 100%;
+    }
+/* cambie  */
+.seccion-perfil-usuario .perfil-usuario-body{
+    width: 100%;
+  }
+.seccion-perfil-usuario .perfil-usuario-header {
+    width: 100%;
+  
+}   
+.caja-detalleg , .caja-pw-maps{
+    width: 100%;
+    height: auto;
+    margin: 25px auto;
+    padding: 30px 10px;
+    
+
+}
+.perfil-usuario-detalleg{
+    display:block;
+    width: 100%;
+}
+.caja-detalle-principal , .caja-detalle-secundario ,.caja-pw-maps .caja-imgmaps {
+    width: 90%;
+}
+.caja-imgmaps{
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+#activador{
+    width: 100%;
+}
+.seccion-perfil-usuario .perfil-usuario-body,
+.seccion-perfil-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+}
+.contenedor-registroempleo {
+    width: 100%;
+}
+
+.detalle-usuario .teximagen {
+padding: 11px;
+margin-bottom: 10px;
+}
+
+.detalle-usuario2 {
+padding:10px;
+    flex-direction: column;
+}
+}
